@@ -1,0 +1,17 @@
+h2 {
+    font-size: 19px;
+}
+
+.summary-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin: 1rem 3rem 0 3rem;
+}
+
+@media (max-width: 768px) {
+    .summary-cards {
+        grid-template-columns: 1fr;
+        margin: 1rem;
+    }
+}
