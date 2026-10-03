@@ -1,4 +1,3 @@
-SELECT * FROM expenses;
 CREATE TABLE expenses(
  id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
  title VARCHAR (120) NOT NULL,
@@ -13,4 +12,4 @@ CHECK (amount > 0);
 
 ALTER TABLE expenses
 ADD CONSTRAINT check_category
-CHECK (category IN ('Food','Transport','Bills','Entertaiment','Other'));
+CHECK (category IN ('Food','Transport','Bills','Entertainment','Other'));
